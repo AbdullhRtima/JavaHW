@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="76dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/header_cover_image"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/header"
+                tools:srcCompat="@drawable/header" />
+
+            <ImageButton
+                android:id="@+id/user_profile_photo"
+                android:layout_width="133dp"
+                android:layout_height="137dp"
+                android:layout_below="@+id/header_cover_image"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="-60dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/profile_circular_border_imageview"
+                android:elevation="5dp"
+                android:padding="20dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/rt1" />
+
+            <RelativeLayout
+                android:id="@+id/profile_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/header_cover_image"
+                android:background="#ebca0707"
+                android:elevation="4dp"
+                android:paddingBottom="24dp">
+
+
+                <TextView
+                    android:id="@+id/user_profile_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="76dp"
+                    android:text="Abdullah Abu Rtima"
+                    android:textColor="#fff"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/user_profile_short_bio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/user_profile_name"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="12dp"
+                    android:text="Full Stack devleoper  "
+                    android:textColor="#fff"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profile_layout"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/editName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="abdullah abu rtima" />
+
+                <EditText
+                    android:id="@+id/editInters"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="full stack devloper " />
+
+                <EditText
+                    android:id="@+id/editDOB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="21/7/1997" />
+
+                <Button
+                    android:id="@+id/save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="update"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="580dp" />
+
+                <RadioButton
+                    android:id="@+id/male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="male"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="516dp" />
+
+                <RadioButton
+                    android:id="@+id/female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="female"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="548dp" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="281dp"
+                    android:layout_height="22dp"
+                    android:text="or contact me on soical media"
+                    tools:layout_editor_absoluteX="96dp"
+                    tools:layout_editor_absoluteY="628dp" />
+
+                <Button
+                    android:id="@+id/facebook"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="facebook" />
+
+                <Button
+                    android:id="@+id/twitter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Twitter" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
